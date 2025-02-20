@@ -56,7 +56,7 @@ def main():
             missing_argument = round(math.degrees(math.atan2(dist_y, dist_x)))
             missing_argument = normalize_degree(missing_argument)
 
-        print(missing_argument)
+        print(missing_argument if missing_argument >= 0 else -missing_argument)
 
 if __name__ == "__main__":
     main()
