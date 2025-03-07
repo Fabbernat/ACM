@@ -7,7 +7,7 @@ input = sys.stdin.readline
 def normalize_degree(degree: int | float) -> int | Any:
     return (degree % 360 + 360) % 360
 
-def set_degree(degree:float, change)->int:
+def set_degree(degree:float)->int:
     while degree < 0:
         degree += 360
     while degree > 359:
